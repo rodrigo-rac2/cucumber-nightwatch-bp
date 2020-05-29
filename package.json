@@ -1,5 +1,5 @@
 {
-  "name": "cucumber-nightwatch-boilerplate",
+  "name": "cucumber-nightwatch-bp",
   "version": "1.0.0",
   "description": "Cucumberjs with Nightwatch Boilerplate for QA Automation",
   "main": "app.js",
