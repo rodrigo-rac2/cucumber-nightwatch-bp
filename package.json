@@ -1,21 +1,32 @@
 {
-  "name": "cucumber-nightwatch-bp",
-  "version": "1.0.0",
-  "description": "Cucumberjs with Nightwatch Boilerplate for QA Automation",
-  "main": "app.js",
-  "scripts": {
-    "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps --format node_modules/cucumber-pretty --format json:report/cucumber_report.json"
-  },
-  "author": "Rodrigo Alves Costa",
-  "license": "MIT",
-  "devDependencies": {
-    "chromedriver": "^83.0.0",
-    "cucumber": "^6.0.3",
-    "cucumber-html-reporter": "^5.0.2",
-    "cucumber-pretty": "^6.0.0",
-    "faker": "^4.1.0",
-    "mkdirp": "^0.5.1",
-    "nightwatch": "^1.2.4",
-    "nightwatch-api": "^2.3.0"
-  }
+	"name": "cucumber-nightwatch-boilerplate",
+	"version": "2.0.1",
+	"description": "Cucumber with Nightwatch Boilerplate",
+	"main": "app.js",
+	"scripts": {
+		"test": "cd src && mkdirp report && cucumber-js --retry 2 --require-module @babel/register --require cucumber.conf.js --require steps --format ../node_modules/cucumber-pretty --format json:report/cucumber_report.json",
+		"posttest": "type src\\report\\cucumber_report.json | node_modules\\.bin\\cucumber-junit.cmd --features-as-suites > src/junit_output.xml"
+	},
+	"author": "Rodrigo Alves Costa",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.10.5",
+		"@babel/plugin-transform-runtime": "^7.11.5",
+		"@babel/preset-env": "^7.10.4",
+		"@babel/preset-typescript": "^7.10.4",
+		"chromedriver": "^87.0.0",
+		"cucumber": "^6.0.5",
+		"cucumber-html-reporter": "^5.0.2",
+		"cucumber-junit": "^1.7.1",
+		"cucumber-pretty": "^6.0.0",
+		"faker": "^4.1.0",
+		"mkdirp": "^0.5.1"
+	},
+	"dependencies": {
+		"@babel/register": "^7.11.5",
+		"@types/cucumber": "^6.0.1",
+		"axios": "^0.20.0",
+		"nightwatch": "^1.3.7",
+		"nightwatch-api": "^3.0.1"
+	}
 }

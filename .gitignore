@@ -1,8 +1,12 @@
+features.bck
 node_modules
 output
 backup
 *.log
+*.xml
 .DS_Store
 screenshots
 report
 chromedriver.log
+package-lock.json
+.env*
