@@ -1,6 +1,6 @@
 # Cucumber-js Nightwatch.js Boilerplate
 
-Feel free to contribute! But please, to start an automation framework based on this, fork this project to initialize your own. Do not clone it!
+Feel free to contribute! But please, to start an automation framework for your e2e tests based on this, fork this project to initialize your own. Do not clone it!
 
 Contact rodrigo dot costa at gmail if you need help with the steps below.
 
