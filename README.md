@@ -2,7 +2,7 @@
 
 Fork this project to initialize your own. Do not clone it!
 
-Contact rodrigo@devsquad.email if you need help.
+Contact rodrigo.costa@gmail.com if you need help.
 
 > This project is provided with a Google Search test 
 
@@ -19,8 +19,8 @@ Contact rodrigo@devsquad.email if you need help.
 3) Go to project settings, and copy the Project's Token ID
 4) Add the project's token to the cucumber-js.conf
 5) Create a test-run with the features you imported, and write down the test-run-id from its URL
-- if the test-run-id URL is: https://studio.cucumber.io/projects/195226/test-runs/430591/overview)
-- then, the test run ID is 430591
+- if the test-run-id URL is: https://studio.cucumber.io/projects/123456/test-runs/111111/overview)
+- then, the test run ID is 111111
 
 > ii) to send automated results to CucumberStudio on a cucumber/nightwatch project
 
@@ -80,9 +80,9 @@ Contact rodrigo@devsquad.email if you need help.
 
 > as you can see, the tests are hooked by its function name and the step declarations in teh feature files 
 
-7) when you're ready, hook them up with the cucumber actionwords in your cucumber studio test run (replace test-run-id with the ID of the test run, available in the test run URL - https://studio.cucumber.io/projects/195226/test-runs/430591/overview)
+7) when you're ready, hook them up with the cucumber actionwords in your cucumber studio test run (replace test-run-id with the ID of the test run, available in the test run URL - https://studio.cucumber.io/projects/123456/test-runs/111111/overview)
 
-`hiptest-publisher -c cucumber-js.conf --only=features,step_definitions --test-run-id=430591`
+`hiptest-publisher -c cucumber-js.conf --only=features,step_definitions --test-run-id=111111`
 
 8) run your tests, they're now hooked up to your cucumber studio tests via the actionwords.yaml file inside the features directory
 
@@ -95,7 +95,7 @@ Contact rodrigo@devsquad.email if you need help.
 
 10) finally, send your tests to cucumber studio through the push parameter - remember that the test run id needs to match the one in the URL of the test run
 
-`hiptest-publisher -c cucumber-js.conf --push=junit_output.xml --test-run-id=430591`
+`hiptest-publisher -c cucumber-js.conf --push=junit_output.xml --test-run-id=111111`
 
 
 > ii) Additional instructions:
@@ -111,4 +111,4 @@ The following directories are present by default
 `steps` - tests (javascript gherkin format) - nightwatch.conf.js
 
 
-> This project uses chromedriver 84.0.0 to automate actions in Google Chrome. A compatible chrome version is required. In order to update this, edit the chromedriver version in package.json and re-run 'npm install'
+> This project uses chromedriver 87.0.0 to automate actions in Google Chrome. A compatible chrome version is required. In order to update this, edit the chromedriver version in package.json and re-run 'npm install'
