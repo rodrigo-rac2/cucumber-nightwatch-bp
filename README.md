@@ -12,8 +12,10 @@ Contact rodrigo.costa@gmail.com if you need help.
 
 `npm run test`
 
-> For a more detailed understanding on this boilerplate, read the instructions below:
-> i) Setting up the environment
+# For a more detailed understanding on this boilerplate, read the instructions below
+
+> i) Setting up the environment:
+
 1) Create a new project in CucumberStudio (http://www.cucumber.io)
 2) import the .feature files (located in /src/features) in the project as new features 
 3) Go to project settings, and copy the Project's Token ID
@@ -98,7 +100,7 @@ Contact rodrigo.costa@gmail.com if you need help.
 `hiptest-publisher -c cucumber-js.conf --push=junit_output.xml --test-run-id=111111`
 
 
-> ii) Additional instructions:
+> iii) additional instructions:
 
 After the tests are run, the following files are generated:
 `dist/report/cucumber_report.json` - cucumber-js report
