@@ -1,8 +1,8 @@
-# Cucumber-js Nightwatch.js Boilerplate with Google Chrome
+# Cucumber-js Nightwatch.js Boilerplate
 
-Fork this project to initialize your own. Do not clone it!
+Feel free to contribute! But please, to start an automation framework based on this, fork this project to initialize your own. Do not clone it!
 
-Contact rodrigo.costa@gmail.com if you need help.
+Contact rodrigo dot costa at gmail if you need help with the steps below.
 
 > This project is provided with a Google Search test 
 
